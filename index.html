@@ -8,5 +8,21 @@
 </head>
 <body>
     <h1>Hello world</h1>
+
+    <!-- Search Widget -->
+    <div class="card my-4">
+        <form class="card-body" action="#" method="GET" role="search">
+        @csrf
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for an Admin" name="asearch" value="{{ request('asearch') }}">
+             <div class="input-group-text">
+                <i class="now-ui-icons ui-1_zoom-bold" type="submit"></i>
+              </div>
+        </div>
+      </form>
+    </div>
+
+<!-- End of Search Widget -->
+
 </body>
 </html>
